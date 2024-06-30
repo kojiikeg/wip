@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html data-capo="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .header[data-v-c8d7fd3a] {
+            background-color: #407c42;
+            color: #fff;
+            font-size: 2vw;
+            padding: 1rem 0
+        }
+
+        .container[data-v-c8d7fd3a] {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 0 1rem
+        }
+
+        .logo[data-v-c8d7fd3a] {
+            color: #fff;
+            font-size: 2vw;
+            font-weight: 700;
+            text-decoration: none
+        }
+
+        .nav[data-v-c8d7fd3a] {
+            display: flex
+        }
+
+        .nav-link[data-v-c8d7fd3a] {
+            color: #fff;
+            margin-left: 1rem;
+            text-decoration: none
+        }
+
+        .nav-link[data-v-c8d7fd3a]:hover {
+            text-decoration: underline
+        }
+    </style>
+    <style>
+        .footer[data-v-17e607ac] {
+            background-color: #407c42;
+            color: #fff;
+            margin: 3% 0 0;
+            padding: 10px 0;
+            text-align: center
+        }
+
+        .footer-content[data-v-17e607ac] {
+            margin: auto
+        }
+
+        .footer p[data-v-17e607ac] {
+            margin: 5px 0
+        }
+    </style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        body,
+        html {
+            height: 100%
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh
+        }
+
+        .content {
+            flex: 1
+        }
+    </style>
+    <style>
+        .hero[data-v-40a73963] {
+            height: 60vh;
+            overflow: hidden;
+            position: relative;
+            width: 100%
+        }
+
+        .hero-image[data-v-40a73963] {
+            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+            width: 100%
+        }
+
+        .hero-text[data-v-40a73963] {
+            color: #fff;
+            left: 50%;
+            position: absolute;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%
+        }
+
+        .hero-text h1[data-v-40a73963] {
+            font-size: 3rem;
+            margin: 0
+        }
+
+        .hero-text p[data-v-40a73963] {
+            font-size: 1.5rem;
+            margin: .5rem 0 0
+        }
+
+        section[data-v-40a73963] {
+            background-color: #f9f9f9;
+            margin: 20px;
+            padding: 10px
+        }
+
+        section h2[data-v-40a73963] {
+            font-size: 4vw;
+            margin-bottom: 1rem;
+            text-align: center
+        }
+
+        .announcement-list[data-v-40a73963] {
+            list-style: none;
+            padding: 0
+        }
+
+        .announcement-item[data-v-40a73963] {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin-bottom: 1rem;
+            padding: 1rem
+        }
+
+        .announcement-item h3[data-v-40a73963] {
+            font-size: 1.5rem;
+            margin: 0 0 .5rem
+        }
+
+        .announcement-item p[data-v-40a73963] {
+            margin: .5rem 0
+        }
+
+        .announcement-list-link[data-v-40a73963] {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+            margin: 20px auto;
+            padding: 10px;
+            text-align: center;
+            width: 80%
+        }
+
+        .centered-text[data-v-40a73963] {
+            margin: 10px;
+            text-align: center
+        }
+
+        .centered-text[data-v-40a73963],
+        .circular-icons[data-v-40a73963] {
+            align-items: center;
+            display: flex;
+            justify-content: center
+        }
+
+        .icon-item[data-v-40a73963] {
+            margin: 10px;
+            text-align: center
+        }
+
+        .icon[data-v-40a73963] {
+            background-color: #f0f0f0;
+            border-radius: 50%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+            font-size: 1.2vh;
+            font-weight: 700;
+            height: 8vh;
+            overflow: hidden;
+            width: 8vh
+        }
+
+        .icon[data-v-40a73963],
+        .icon-text[data-v-40a73963] {
+            align-items: center;
+            display: flex;
+            justify-content: center
+        }
+
+        .icon-text[data-v-40a73963] {
+            color: #292929;
+            height: 100%;
+            margin: 2px;
+            width: 100%
+        }
+
+        .table[data-v-40a73963] {
+            margin: auto;
+            width: 100%
+        }
+
+        .contact-map-container[data-v-40a73963] {
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between
+        }
+
+        .map[data-v-40a73963] {
+            padding: 2%;
+            width: 50%
+        }
+
+        .contact-info[data-v-40a73963] {
+            padding: 2%;
+            text-align: center;
+            width: 40%
+        }
+
+        @media (max-width:600px) {
+            .contact-map-container[data-v-40a73963] {
+                flex-direction: column
+            }
+
+            .map[data-v-40a73963] {
+                width: 100%
+            }
+
+            .contact-info[data-v-40a73963] {
+                padding: 2%;
+                text-align: center;
+                width: 100%
+            }
+
+            section h2[data-v-40a73963] {
+                font-size: 6vw;
+                margin-bottom: 1rem;
+                text-align: center
+            }
+
+            .contact-text[data-v-40a73963] {
+                text-align: left
+            }
+        }
+
+        .contact-text[data-v-40a73963] {
+            margin: 4% 10%;
+            text-align: left
+        }
+
+        .access-logo-image[data-v-40a73963] {
+            height: auto;
+            width: 60%
+        }
+
+        .services-overlay[data-v-40a73963] {
+            bottom: 4%;
+            color: #fff;
+            position: absolute;
+            right: 2%;
+            z-index: 10
+        }
+
+        .services-overlay h2[data-v-40a73963] {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, .5)
+        }
+    </style>
+    <style>
+        .swiper-container[data-v-c29197fc] {
+            align-items: center;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            margin: 20px
+        }
+
+        .announcement-card[data-v-c29197fc] {
+            padding: 30px;
+            text-align: center
+        }
+
+        .announcement-card h3[data-v-c29197fc] {
+            font-size: 1.5rem;
+            margin-bottom: 10px
+        }
+
+        .announcement-card .date[data-v-c29197fc] {
+            color: #666;
+            margin-bottom: 5px
+        }
+    </style>
+    <style>
+        .clinic-hours[data-v-07773dc9] {
+            margin-top: 20px
+        }
+
+        table[data-v-07773dc9] {
+            border-collapse: collapse;
+            font-size: 2vw;
+            width: 100%
+        }
+
+        td[data-v-07773dc9],
+        th[data-v-07773dc9] {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: center
+        }
+
+        th[data-v-07773dc9] {
+            background-color: #f0f0f0;
+            font-size: 1.5vw
+        }
+
+        .closed[data-v-07773dc9],
+        .time-slot[data-v-07773dc9] {
+            font-weight: 700
+        }
+
+        .closed[data-v-07773dc9] {
+            color: red
+        }
+    </style>
+    <link rel="stylesheet" href="/_nuxt/entry.DkHBqk29.css">
+    <link rel="preload" as="fetch" crossorigin="anonymous" href="/_payload.json?b53fa606-e0dc-49a5-94fa-616c7331e6e5">
+    <link rel="modulepreload" as="script" crossorigin href="/_nuxt/_ogvXgc6.js">
+    <link rel="modulepreload" as="script" crossorigin href="/_nuxt/DWP0N33k.js">
+    <link rel="prefetch" as="script" crossorigin href="/_nuxt/CIzWxxYw.js">
+    <link rel="prefetch" as="script" crossorigin href="/_nuxt/BqEhaJJC.js">
+    <link rel="prefetch" as="script" crossorigin href="/_nuxt/Cx-_reLv.js">
+    <script type="module" src="/_nuxt/_ogvXgc6.js" crossorigin></script>
+</head>
+
+<body>
+    <div id="__nuxt">
+        <div class="wrapper">
+            <header class="header" data-v-c8d7fd3a>
+                <div class="container" data-v-c8d7fd3a><a aria-current="page" href="/"
+                        class="router-link-active router-link-exact-active logo" data-v-c8d7fd3a>リハビリはるおクリニック</a>
+                    <nav class="nav" data-v-c8d7fd3a><a aria-current="page" href="/"
+                            class="router-link-active router-link-exact-active nav-link" data-v-c8d7fd3a>ホーム</a><a
+                            aria-current="page" href="/#services"
+                            class="router-link-active router-link-exact-active nav-link" data-v-c8d7fd3a>当院について</a><a
+                            href="/announcements" class="nav-link" data-v-c8d7fd3a>お知らせ</a><a aria-current="page"
+                            href="/#time" class="router-link-active router-link-exact-active nav-link"
+                            data-v-c8d7fd3a>診療時間</a><a aria-current="page" href="/#contact"
+                            class="router-link-active router-link-exact-active nav-link" data-v-c8d7fd3a>お問い合わせ</a>
+                    </nav>
+                </div>
+            </header>
+            <div class="content">
+                <div data-v-40a73963>
+                    <div class="hero" data-v-40a73963><img src="https://raw.githubusercontent.com/kojiikeg/wip/master/images/0181.jpg" alt="Hero Image" class="hero-image"
+                            data-v-40a73963>
+                        <div class="hero-text" data-v-40a73963>
+                            <h1 data-v-40a73963>ようこそ、はるおクリニックへ</h1>
+                        </div>
+                        <div class="services-overlay" data-v-40a73963>
+                            <div class="circular-icons" data-v-40a73963><!--[-->
+                                <div class="icon-item" data-v-40a73963>
+                                    <div class="icon" style="background-color:#ACD793;" data-v-40a73963>
+                                        <div class="icon-text" data-v-40a73963>整形外科</div>
+                                    </div>
+                                </div>
+                                <div class="icon-item" data-v-40a73963>
+                                    <div class="icon" style="background-color:#FFA62F;" data-v-40a73963>
+                                        <div class="icon-text" data-v-40a73963>リハビリテーション科</div>
+                                    </div>
+                                </div>
+                                <div class="icon-item" data-v-40a73963>
+                                    <div class="icon" style="background-color:#5C88C4;" data-v-40a73963>
+                                        <div class="icon-text" data-v-40a73963>リウマチ科</div>
+                                    </div>
+                                </div><!--]-->
+                            </div>
+                        </div>
+                    </div>
+                    <section class="announcements" data-v-40a73963>
+                        <h2 data-v-40a73963>お知らせ</h2>
+                        <div data-v-40a73963 data-v-c29197fc><swiper-container navigation="true" pagination="true"
+                                autoplay loop="true" slides-per-view="1" class="swiper-container"
+                                data-v-c29197fc><!--[--><swiper-slide data-v-c29197fc>
+                                    <div class="announcement-card" data-v-c29197fc>
+                                        <h3 data-v-c29197fc>サンプルお知らせ</h3>
+                                        <p class="date" data-v-c29197fc>2024年6月20日</p><!--[-->
+                                        <p data-v-c29197fc>ここに本文が入ります</p>
+                                        <p data-v-c29197fc>サンプルテキストです</p><!--]-->
+                                    </div>
+                                </swiper-slide><swiper-slide data-v-c29197fc>
+                                    <div class="announcement-card" data-v-c29197fc>
+                                        <h3 data-v-c29197fc>システム</h3>
+                                        <p class="date" data-v-c29197fc>2024年6月25日</p><!--[-->
+                                        <p data-v-c29197fc>自動でスライドショーが動きます</p>
+                                        <p data-v-c29197fc>手動で操作すると自動再生は止まります</p><!--]-->
+                                    </div>
+                                </swiper-slide><swiper-slide data-v-c29197fc>
+                                    <div class="announcement-card" data-v-c29197fc>
+                                        <h3 data-v-c29197fc>対応予定</h3>
+                                        <p class="date" data-v-c29197fc>2024年6月30日</p><!--[-->
+                                        <p data-v-c29197fc>テキストカラーやサイズ変更は対応中です</p>
+                                        <p data-v-c29197fc>投稿システムは対応中です</p><!--]-->
+                                    </div>
+                                </swiper-slide><!--]--></swiper-container></div>
+                        <div class="announcement-list-link" data-v-40a73963><a href="/announcements" class=""
+                                data-v-40a73963>お知らせ一覧はこちらへ</a></div>
+                    </section>
+                    <section id="time" data-v-40a73963>
+                        <h2 data-v-40a73963>診療時間</h2>
+                        <div class="table" data-v-40a73963>
+                            <div class="clinic-hours" data-v-40a73963 data-v-07773dc9>
+                                <table data-v-07773dc9>
+                                    <thead data-v-07773dc9>
+                                        <tr data-v-07773dc9>
+                                            <th width="100" data-v-07773dc9></th>
+                                            <th width="100" data-v-07773dc9>月曜日</th>
+                                            <th width="100" data-v-07773dc9>火曜日</th>
+                                            <th width="100" data-v-07773dc9>水曜日</th>
+                                            <th width="100" data-v-07773dc9>木曜日</th>
+                                            <th width="100" data-v-07773dc9>金曜日</th>
+                                            <th width="100" data-v-07773dc9>土曜日</th>
+                                            <th width="100" data-v-07773dc9>日曜日</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody data-v-07773dc9>
+                                        <tr data-v-07773dc9>
+                                            <th class="time-slot" data-v-07773dc9>午前8時<br data-v-07773dc9>~<br
+                                                    data-v-07773dc9>午後1時</th>
+                                            <td class="" data-v-07773dc9>○</td>
+                                            <td class="" data-v-07773dc9>○</td>
+                                            <td class="" data-v-07773dc9>○</td>
+                                            <td class="closed" data-v-07773dc9>休診</td>
+                                            <td class="" data-v-07773dc9>○</td>
+                                            <td class="" data-v-07773dc9>○</td>
+                                            <td class="closed" data-v-07773dc9>休診</td>
+                                        </tr>
+                                        <tr data-v-07773dc9>
+                                            <th class="time-slot" data-v-07773dc9>午後2時<br data-v-07773dc9>~<br
+                                                    data-v-07773dc9>午後7時</th>
+                                            <td class="" data-v-07773dc9>○</td>
+                                            <td class="" data-v-07773dc9>○</td>
+                                            <td class="" data-v-07773dc9>○</td>
+                                            <td class="closed" data-v-07773dc9>休診</td>
+                                            <td class="" data-v-07773dc9>○</td>
+                                            <td class="closed" data-v-07773dc9>休診</td>
+                                            <td class="closed" data-v-07773dc9>休診</td>
+                                        </tr>
+                                        <tr data-v-07773dc9>
+                                            <th class="time-slot" data-v-07773dc9>装具外来</th>
+                                            <td data-v-07773dc9></td>
+                                            <td data-v-07773dc9>午後5時<br data-v-07773dc9>から</td>
+                                            <td data-v-07773dc9>午前11時30分<br data-v-07773dc9>から</td>
+                                            <td data-v-07773dc9></td>
+                                            <td data-v-07773dc9></td>
+                                            <td data-v-07773dc9></td>
+                                            <td data-v-07773dc9></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="centered-text" data-v-40a73963>
+                                <p data-v-40a73963><strong style="color:red;" data-v-40a73963>休診日</strong>
+                                    ：木曜・日曜・国民の祝日および休日・年末年始・夏季（お盆）<br data-v-40a73963> 受付時間は終了30分前までです </p>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="contact" data-v-40a73963>
+                        <h2 data-v-40a73963>お問い合わせ・アクセス</h2>
+                        <div class="contact-map-container" data-v-40a73963>
+                            <div class="contact-info" data-v-40a73963><img src="https://raw.githubusercontent.com/kojiikeg/wip/master/images/logo.jpg" alt="ロゴ画像"
+                                    class="access-logo-image" data-v-40a73963>
+                                <div class="contact-text" data-v-40a73963>
+                                    <p data-v-40a73963><strong data-v-40a73963>院長: </strong>南　はるお（○○○○専門医）</p>
+                                    <p data-v-40a73963><strong data-v-40a73963>住所: </strong>〒100-8111 東京都千代田区千代田１−１</p>
+                                    <p data-v-40a73963><strong data-v-40a73963>電話番号: </strong>012-3456-7890</p>
+                                    <p data-v-40a73963><strong data-v-40a73963>FAX: </strong>012-3456-7891</p>
+                                    <p data-v-40a73963><strong data-v-40a73963>E-mail: </strong>mail@example.com</p>
+                                </div>
+                            </div>
+                            <div class="map" data-v-40a73963><iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.668042200207!2d139.75022457605039!3d35.68517497258606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c0d02d8064d%3A0xd11a5f0b379e6db7!2z55qH5bGF!5e0!3m2!1sja!2sjp!4v1719653969931!5m2!1sja!2sjp"
+                                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade" data-v-40a73963></iframe></div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div data-v-17e607ac>
+                <footer class="footer" data-v-17e607ac>
+                    <div class="footer-content" data-v-17e607ac>
+                        <p data-v-17e607ac>© 2024 はるおクリニック. All Rights Reserved.</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <div id="teleports"></div>
+    <script type="application/json" id="__NUXT_DATA__" data-ssr="true"
+        data-src="/_payload.json?b53fa606-e0dc-49a5-94fa-616c7331e6e5">[{"state":1,"once":3,"_errors":4,"serverRendered":6,"path":7,"prerenderedAt":8},["Reactive",2],{},["Set"],["ShallowReactive",5],{},true,"/",1719711506979]</script>
+    <script>window.__NUXT__ = {}; window.__NUXT__.config = { public: {}, app: { baseURL: "/", buildId: "b53fa606-e0dc-49a5-94fa-616c7331e6e5", buildAssetsDir: "/_nuxt/", cdnURL: "" } }</script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+</body>
+
+</html>
